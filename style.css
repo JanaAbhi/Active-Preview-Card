@@ -21,14 +21,14 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 280px 430px;
+  grid-template-columns: 300px 430px;
   grid-template-rows: 300px;
 }
 .main-img{
   background-image: url(./assets/images/drawers.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position:left;
   border-radius: 10px 0 0 10px;
 }
 .content{
@@ -36,15 +36,16 @@ body {
   background-color: #fff;
   border-radius: 0 10px 10px 0;
 }
-.content h3{
+.content h2{
   font-weight: 500;
   color: var(--VeryDarkGrayish-Blue);
   margin: 2.5rem 0 1.5rem 0;
   line-height: 1.4;
   font-weight: 700;
+  font-size: 1.2rem;
 }
 .content p{
-  color: var(--VeryDarkGrayish-Blue);
+  color: var(--Desaturated-Dark-Blue);
   margin-bottom: 1rem;
   font-size: 0.8rem;
   font-weight: 400;
