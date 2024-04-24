@@ -35,7 +35,7 @@ body {
 .content {
   padding: 0 2.5rem;
   background-color: #fff;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 20px 20px 0;
 }
 .content h2 {
   font-weight: 500;
@@ -86,7 +86,9 @@ body {
   font-weight: 500;
   color: var(--Grayish-Blue);
 }
-.shareImg {
+
+.shareImg img{
+  margin-top: 20px;
   background-color: var(--Light-Grayish-Blue);
   border-radius: 50%;
   width: 30px;
@@ -165,11 +167,14 @@ body {
     border-radius: 20px 20px 0 0;
     background-position:center;
   }
+  .content{
+    border-radius: 0 0 20px 20px;
+  }
   .content h2 {
     font-size: 17px;
   }
   .content p {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .user {
     margin: 2rem 0 2rem 0;
@@ -186,10 +191,9 @@ body {
     margin-bottom: 100px;
     position: absolute;
     left: -40px;
-    top: calc(100% + -70px);
+    top: calc(100% + -65px);
     border-radius: 0 0 20px 20px;
     transition: all 0.4 ease;
-   
   }
   .share__box::before{
     display: none;
@@ -205,10 +209,11 @@ body {
    margin-left: 20px;
    font-size: 30px;
   }
-  .shareImg img{
-
-  }
   .attribution{
     margin-top: 30px;
   }
+  .shareImg img{
+
+   }
+ 
 }
