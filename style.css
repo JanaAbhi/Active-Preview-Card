@@ -23,7 +23,7 @@ body {
   display: grid;
   grid-template-columns: 300px 430px;
   grid-template-rows: 300px;
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .main-img {
   background-image: url(./assets/images/drawers.jpg);
@@ -212,8 +212,5 @@ body {
   .attribution{
     margin-top: 30px;
   }
-  .shareImg img{
-
-   }
  
 }
