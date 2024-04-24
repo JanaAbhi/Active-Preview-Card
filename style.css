@@ -148,7 +148,7 @@ ul{
   top: 60px;
 }
 .remove {
-  /* display: none; */
+  display: none;
 }
 .attribution {
   font-size: 11px;
