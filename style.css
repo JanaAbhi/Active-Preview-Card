@@ -19,6 +19,10 @@ body {
   place-items: center;
   min-height: 100vh;
 }
+ul{
+  list-style-type: none;
+  display: flex;
+} 
 .container {
   display: grid;
   grid-template-columns: 300px 430px;
@@ -121,9 +125,9 @@ body {
   font-size: 12px;
 }
 .icons {
-  display: flex;
+ display: flex;
   justify-content: center;
-  align-items: center;
+   align-items: center;  
 }
 .fa-brands {
   margin-left: 20px;
@@ -144,7 +148,7 @@ body {
   top: 60px;
 }
 .remove {
-  display: none;
+  /* display: none; */
 }
 .attribution {
   font-size: 11px;
