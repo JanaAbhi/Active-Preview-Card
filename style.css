@@ -23,6 +23,7 @@ body {
   display: grid;
   grid-template-columns: 300px 430px;
   grid-template-rows: 300px;
+  margin-top: 80px;
 }
 .main-img{
   background-image: url(./assets/images/drawers.jpg);
@@ -39,7 +40,7 @@ body {
 .content h2{
   font-weight: 500;
   color: var(--VeryDarkGrayish-Blue);
-  margin: 2.5rem 0 1.5rem 0;
+  margin: 2.5rem 0 1rem 0;
   line-height: 1.4;
   font-weight: 700;
   font-size: 1.2rem;
@@ -56,7 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .container .content .user .info img{
   width: 50px;
@@ -96,8 +97,8 @@ body {
 }
 .share__box{
   background-color: var(--VeryDarkGrayish-Blue);
-  width: 220px;
-  height: 50px;
+  width: 260px;
+  height: 60px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -105,7 +106,7 @@ body {
   color: #FFF;
   text-transform: uppercase;
   position: absolute;
-  left: 230px;
+  left: 210px;
   bottom: 70px;
 }
 .share__box > *{
@@ -117,11 +118,19 @@ body {
   letter-spacing: 3px;
   font-size: 12px;
 }
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
 .fa-brands{
+  margin-left: 20px;
+  font-size: 25px;
   display: flex;
   justify-content: end;
-  margin-left: 5px;
 }
+
 .share__box::before{
   width: 0;
 	height: 0;
@@ -130,8 +139,8 @@ body {
 	border-color:var(--VeryDarkGrayish-Blue) transparent transparent transparent;
   content: "";
   position: absolute;
-  right: 105px;
-  top:50px
+  right: 123px;
+  top:60px
 }
 .remove{
   display: none;
@@ -142,4 +151,42 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width:768px){
+  body{
+    width: 80%;
+    margin:0 auto;
+  }
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px;
+  }
+  .main-img{
+    border-radius: 10px 10px 0 0;
+  }
+  .content h2{
+  font-size: 16px;
+  }
+  .content p{
+    font-size: 13px;
+  }
+  .user{
+    margin: 2rem 0 2rem 0;
+  }
+  .shareImg{
+    z-index: 4;
+  }
+  .share__box{
+   width: 385px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top:1px;
+ left: -40px
+  }
+  .remove{
+    display: none;
+  }
 }
