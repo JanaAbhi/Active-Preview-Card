@@ -90,13 +90,32 @@ ul{
   font-weight: 500;
   color: var(--Grayish-Blue);
 }
-
-.shareImg img{
-  margin-top: 20px;
+.shareImg{
   background-color: var(--Light-Grayish-Blue);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  width: 30px;
-  padding: 8px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.shareImg{
+  cursor: pointer;
+}
+.shareImg:hover{
+  background-color: var(--Desaturated-Dark-Blue);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.shareImg:hover svg path{
+  fill: #fff;
 }
 .user {
   position: relative;
@@ -110,7 +129,7 @@ ul{
   justify-content: center;
   align-items: center;
   color: #fff;
-  text-transform: uppercase;
+
   position: absolute;
   left: 210px;
   bottom: 70px;
@@ -122,7 +141,8 @@ ul{
   font-weight: lighter;
   color: var(--Grayish-Blue);
   letter-spacing: 3px;
-  font-size: 12px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
 }
 .icons {
  display: flex;
@@ -185,7 +205,7 @@ ul{
   }
   .shareImg {
     z-index: 4;
-  }
+  } 
   .share__box {
     width: calc(100% + 80px);
     height: 100px;
